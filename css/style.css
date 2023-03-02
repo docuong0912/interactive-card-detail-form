@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+*{
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --linear-1: hsl(249, 99%, 64%);
+    --linear-2: hsl(278, 94%, 30%);
+    --light-grayish-violet:hsl(270, 3%, 87%);
+    --dark-grayish-violet:hsl(279, 6%, 55%);
+    --verydark-violet: hsl(278, 68%, 11%);
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: gray;
+    opacity: 0.5; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: gray;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: gray;
+  }

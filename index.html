@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/form.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/structure.css">
+  <link rel="stylesheet" href="./css/card.css">
   
   <title>Frontend Mentor | Interactive card details form</title>
 
@@ -16,7 +20,6 @@
 </head>
 <body>
   <div class="upper-bg"></div>
-  <div class="lower-bg"></div>
   <div class="card">
     <div class="front-card">
       <div class="card-header">
@@ -36,7 +39,7 @@
     <div class="back-card">
       <div class="bc-header"></div>
       <div class="bc-content">
-        <div class="cic-container">
+        <div class="cvc-container">
           <p></p>
         </div>
       </div>
@@ -44,34 +47,29 @@
   </div>
   <form>
     <label>cardholder name</label>
-    <input type="text"/>
+    <input type="text" placeholder="e.g. NGUYEN DO CUONG"/>
+    <label>card number</label>
+    <input type="number"placeholder="e.g. 1234 5678 9123 0000" maxlength="12"/>
+    <div class="card-detail">
+      <div class="details">
+        <label>exp.date (mm/yy)</label>
+        <div class="time">
+          <input type="number" max="12" placeholder="MM"/>
+          <input type="number" max="99" placeholder="YY"/>
+        </div>
+      </div>
+      
+      <div class="cvc">
+        <label>cvc</label>
+        <input type="number" maxlength="3" placeholder="e.g. 123"/>
+      </div>
+      
+    </div>
   </form>
-  
-  Jane Appleseed
-  00/00
-
-  000
-
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
 
   <!-- Completed state start -->
 
-  Thank you!
-  We've added your card details
-  Continue
+
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

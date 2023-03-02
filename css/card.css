@@ -1,0 +1,17 @@
+.front-card{
+    background-image: url('../images/bg-card-front.png');
+    background-repeat: no-repeat;
+}
+.back-card{
+    background-image: url('../images/bg-card-back.png');
+    background-repeat: no-repeat;
+    margin-left: 210px !important;
+    margin-top: 20px;
+}
+.back-card,.front-card{
+    width: 50%;
+    height: 200px;
+    background-size: contain;
+    border-radius: 10px;
+    margin-left: 150px;
+}
